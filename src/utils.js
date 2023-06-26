@@ -5,7 +5,7 @@ module.exports = {
         type: 'sqlite',
         database: './user.sqlite',
         synchronize: true,
-        entities: [require('./entity/User')],
+        entities: [require('./entity/User'), require('./entity/Movie')],
         logging: ["query", "error"]
     })
 }
